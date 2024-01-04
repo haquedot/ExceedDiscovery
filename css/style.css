@@ -20,7 +20,8 @@ body {
     height: 8px;
     /* border-radius: 50%; */
     cursor: pointer;
-    transition: width 0.3s ease-in-out; /* Add transition effect */
+    transition: width 0.3s ease-in-out;
+    /* Add transition effect */
 }
 
 .owl-theme .owl-dots .owl-dot.active {
@@ -181,7 +182,7 @@ h1 {
 }
 
 #section-2 .custom-card h4 {
-    margin: 0;
+    /* margin: 0; */
     color: #000;
     font-family: Poppins;
     font-size: 16px;
@@ -427,6 +428,10 @@ h1 {
     padding: 0;
 }
 
+.agenda-ul img {
+    border-radius: 16px;
+}
+
 .agenda-ul li {
     list-style: none;
 }
@@ -511,7 +516,8 @@ h1 {
         min-height: 343px !important;
         /* margin-right: 12px; */
     }
-/* 
+
+    /* 
     #section-2 .card-block {
         min-height: 343px;
     }

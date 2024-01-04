@@ -12,7 +12,7 @@ $(document).ready(function () {
         $(this).addClass("active-img");
         var dayContent = $(this).attr("id");
         console.log(dayContent)
-        $(".img-campAgenda img").attr('src', 'images/' + 'ComputerDesign' + '.png');
+        $(".img-campAgenda img").attr('src', 'images/' + dayContent + '.webp');
     });
     $('.btnag').click(function () {
         var index = $('.btnag').index(this);
