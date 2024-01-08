@@ -24,6 +24,25 @@ $(document).ready(function () {
 });
 
 
+// Initialize Owl Carousel
+$(document).ready(function () {
+    $(".loop").owlCarousel({
+        center: true,
+        items: 3,
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+            571: {
+                items: 3
+            }
+        }
+    });
+});
+
+
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
@@ -31,17 +50,89 @@ $(document).ready(function () {
         nav: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                nav: true,
+
             },
             768: {
-                items: 2
+                items: 2,
+                nav: true,
+
             },
             992: {
-                items: 4
+                items: 4,
+                nav: true,
+
             }
         }
     });
+
+
+    // $('.carousel1').owlCarousel({
+    //     loop: true,
+    //     margin: 0,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //             nav: false,
+    //             mouseDrag: true,
+    //             stagePadding: 20,
+    //         },
+    //         600: {
+    //             items: 3,
+    //             nav: true,
+    //             mouseDrag: true,
+    //             stagePadding: 50,
+    //             navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+    //         },
+    //         1000: {
+    //             items: 3,
+    //             nav: true,
+    //             mouseDrag: true,
+    //             stagePadding: 50,
+    //             navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+    //         }
+    //     }
+    // })
 });
+
+
+
+
+// $(document).ready(function () {
+//     $('.carousel1').owlCarousel({
+//         loop: true,
+//         margin: 0,
+//         responsive: {
+//             0: {
+//                 items: 1,
+//                 nav: false,
+//                 mouseDrag: true,
+//                 stagePadding: 20,
+//             },
+//             600: {
+//                 items: 3,
+//                 center: true,
+//                 loop: true,
+//                 margin: 10,
+//                 stagePadding: 50, // Adjust the stagePadding as needed
+//                 nav: true,
+//                 mouseDrag: true,
+//                 navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+//             },
+//             1000: {
+//                 items: 3,
+//                 nav: true,
+//                 mouseDrag: true,
+//                 stagePadding: 50, // Adjust the stagePadding as needed
+//                 navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+//             }
+//         }
+//     });
+// });
+
+
+
 
 
 // const btnag = document.querySelectorAll(".btnag");
