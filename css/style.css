@@ -21,8 +21,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     border-radius: 50% !important;
     cursor: pointer;
     position: absolute;
@@ -56,13 +56,18 @@ body {
 
 .carousel1 .owl-item {
     /* padding: 0 -18px !important; */
+    /* margin: 10px 0; */
     border-radius: 8px;
+    /* width: 300px !important; */
+    /* height: 80%; */
     opacity: 0.5;
 
 }
 
 .carousel1 .owl-item.active {
     /* margin: 0 -18px; */
+    /* margin: 5px 0; */
+    /* width: 446px !important; */
     z-index: 1;
     opacity: 1;
 }
