@@ -2,59 +2,87 @@ body {
     font-family: Poppins;
 }
 
+/* Your existing CSS styles */
+.carousel1 .owl-nav {
+    overflow: hidden;
+    height: 0px;
+}
 
-.card {
-    /* padding: 20px; */
-    /* background-color: #f0f0f0; */
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #5110e9;
+}
+
+.carousel1 .item {
     text-align: center;
 }
 
-.card img {
-    border-radius: 8px;
-
-}
-
-.loop .owl-dots {
-    display: none;
-}
-
-.loop .owl-item {
-    opacity: 0.5;
-    width: 35% !important;
-    transition: opacity 0.5s ease-in-out;
-    margin-right: 0 !important;
-
-    margin: -40px;
-
-}
-
-.owl-item.center {
-    opacity: 1;
-    width: 80% !important;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 1;
-    margin-right: 0 !important;
-}
-
-.owl-stage {
+.carousel1 .nav-button {
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50% !important;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FCE6D6;
+    z-index: 1;
+}
+
+.carousel1 .owl-prev {
+    left: 5px;
+}
+
+.carousel1 .owl-next {
+    right: 5px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #F18234;
+    /* font-weight: 600; */
+    font-size: 26px;
+    background: #FCE6D6;
+}
+.carousel1 .prev-carousel:hover {
+    background-position: 0px -53px;
+}
+
+.carousel1 .next-carousel:hover {
+    background-position: -24px -53px;
+}
+
+.carousel1 .owl-item {
+    /* padding: 0 -18px !important; */
+    border-radius: 8px;
+    opacity: 0.5;
+
+}
+
+.carousel1 .owl-item.active {
+    /* margin: 0 -18px; */
+    z-index: 1;
+    opacity: 1;
+}
+
+.carousel1 .item img {
+    border-radius: 12px;
 }
 
 
-
-
-.owl-nav {
+#carousel-2 .owl-nav {
     display: none;
 }
 
-.owl-dots {
+#carousel-2 .owl-dots {
     padding-top: 16px;
     text-align: center;
 }
 
 /* Customize indicator styles */
-.owl-theme .owl-dots .owl-dot {
+#carousel-2 .owl-dots .owl-dot {
     background: #D1D1D1;
     display: inline-block;
     margin: 0 5px;
@@ -66,7 +94,7 @@ body {
     /* Add transition effect */
 }
 
-.owl-theme .owl-dots .owl-dot.active {
+#carousel-2 .owl-dots .owl-dot.active {
     width: 80px;
     height: 8px;
     background: #5DB5F4;
@@ -540,6 +568,14 @@ h1 {
 }
 
 @media (max-width: 992px) {
+    .carousel1 {
+        padding: 0 58px;
+    }
+
+    .carousel1 .owl-item {
+        padding: 0 6px;
+    }
+
     .loop .owl-item {
         opacity: 0.5;
         width: 40% !important;
@@ -735,6 +771,14 @@ h1 {
 }
 
 @media (max-width: 572px) {
+    .carousel-div {
+        padding: 0 !important;
+    }
+
+    .carousel1 {
+        padding: 0;
+    }
+
     .loop .owl-item {
         opacity: 0.5;
         width: 100% !important;

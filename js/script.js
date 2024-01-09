@@ -23,28 +23,39 @@ $(document).ready(function () {
 
 });
 
-
-// Initialize Owl Carousel
 $(document).ready(function () {
-    $(".loop").owlCarousel({
-        center: true,
-        items: 3,
+    $('.carousel1').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 0,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                nav: false,
+                mouseDrag: true,
+                stagePadding: 20,
             },
-            571: {
-                items: 3
+            600: {
+                items: 1,
+                nav: true,
+                mouseDrag: true,
+                stagePadding: 50,
+                navText: ["<div class='nav-button owl-prev'><i class='bi bi-chevron-left'></i></div>", "<div class='nav-button owl-next'><i class='bi bi-chevron-right'></i></div>"],
+            },
+            1000: {
+                items: 1,
+                nav: true,
+                mouseDrag: true,
+                stagePadding: 50,
+                navText: ["<div class='nav-button owl-prev'><i class='bi bi-chevron-left'></i></div>", "<div class='nav-button owl-next'><i class='bi bi-chevron-right'></i></div>"],
             }
         }
     });
 });
 
 
+
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('.carousel2').owlCarousel({
         loop: true,
         margin: 12,
         nav: true,
