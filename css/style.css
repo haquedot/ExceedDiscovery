@@ -46,6 +46,7 @@ body {
     font-size: 26px;
     background: #FCE6D6;
 }
+
 .carousel1 .prev-carousel:hover {
     background-position: 0px -53px;
 }
@@ -146,6 +147,8 @@ h1 {
     text-transform: uppercase;
 }
 
+
+
 .star {
     color: #F8B84E;
     font-size: 32px;
@@ -177,6 +180,18 @@ h1 {
 
 .show {
     display: none;
+}
+
+
+.program-details {
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.program-details p {
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 #section-2 {
@@ -573,6 +588,7 @@ h1 {
 }
 
 @media (max-width: 992px) {
+
     .carousel1 {
         padding: 0 58px;
     }
@@ -581,15 +597,6 @@ h1 {
         padding: 0 6px;
     }
 
-    .loop .owl-item {
-        opacity: 0.5;
-        width: 40% !important;
-        transition: opacity 0.5s ease-in-out;
-        margin-right: 0 !important;
-
-        /* margin: 10px !important; */
-
-    }
 
     .owl-item.center {
         opacity: 1;
@@ -606,6 +613,10 @@ h1 {
 
     .vertical-3 {
         border-right: 0;
+    }
+
+    .program-details {
+        padding: 14px;
     }
 
     /* #section-2 .show {
@@ -666,9 +677,18 @@ h1 {
     }
 
     #campAgenda .day-content:hover {
-        cursor: pointer;
+       pointer-events: none;
         background-color: transparent;
-        color: #fff;
+        color: #000;
+    }
+
+
+    #campAgenda .day-content:hover p {
+        color: #000958 !important;
+    }
+
+    #campAgenda .day-content:hover span {
+        color: #707070 !important;
     }
 
     .img-campAgenda {
@@ -776,6 +796,21 @@ h1 {
 }
 
 @media (max-width: 572px) {
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+        text-transform: none;
+
+    }
+
+    h6 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 31.2px;
+    }
+
     .carousel-div {
         padding: 0 !important;
     }
@@ -800,6 +835,10 @@ h1 {
         transition: opacity 0.5s ease-in-out;
         z-index: 1;
         /* margin-right: 0 !important; */
+    }
+
+    .program-details p {
+        margin: 0;
     }
 
     .vertical {
