@@ -114,7 +114,32 @@ $(document).ready(function () {
     // })
 });
 
+$(document).ready(function () {
+    $('.carousel3').owlCarousel({
+        loop: true,
+        margin: 20,
+        // nav: true,
+        autoplay:true,
+        responsive: {
+            0: {
+                items: 1,
+                // nav: true,
 
+            },
+            768: {
+                items: 1.3,
+                // nav: true,
+
+            },
+            992: {
+                items: 2.5,
+                // nav: true,
+
+            }
+        }
+    });
+
+});
 
 
 // $(document).ready(function () {
