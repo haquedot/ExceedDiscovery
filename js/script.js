@@ -127,11 +127,16 @@ $(document).ready(function () {
 
             },
             768: {
-                items: 1.3,
+                items: 1.4,
                 // nav: true,
 
             },
             992: {
+                items: 2,
+                // nav: true,
+
+            },
+            1024: {
                 items: 2.5,
                 // nav: true,
 
